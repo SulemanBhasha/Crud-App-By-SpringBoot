@@ -1,0 +1,20 @@
+package com.boostmytool.bestlaptopstore.models;
+
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Size;
+
+public class ProductDetails {
+
+	@NotEmpty(message= "The name is required")
+	private String name;
+	@NotEmpty(message = "The brand is required")
+	private String brand;
+	@NotEmpty(message = "The category is required") 
+	private String category;
+	@Min(0)
+	private Double price;
+	@Size(min=10,message = "the description should be atleast 1 charcaters")
+	@Size(min=10,message = "the description should be atleast 1 charcaters")
+	private String description;
+}

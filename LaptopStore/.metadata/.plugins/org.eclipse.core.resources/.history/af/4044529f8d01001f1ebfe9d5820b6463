@@ -1,0 +1,5 @@
+package com.boostmytool.bestlaptopstore.models;
+
+public class ProductDetails {
+
+}
